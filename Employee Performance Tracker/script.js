@@ -19,10 +19,6 @@ output.tasksCompleted=user.tasksCompleted;
 output.bonus=user.bonus;
 
 console.log(output);
-
-let arr=[].push(output)
-
-console.log(arr)
    }
     })
 
@@ -36,12 +32,12 @@ avgRating+=employe.rating;
 
 }
 avgRating=avgRating/employees.length;
-console.log(avgRating)
+console.log(`average rating of all employees: ${avgRating}`)
 
 if(avgRating>=4.5){
-   console.log("excellent")
+   console.log("company’s overall performance is excellent")
 }else if(avgRating>=4.0){
-   console.log("Good")
+   console.log("company’s overall performance is Good")
 }else{
-   console.log("Needs to improvement")
+   console.log("company’s overall performance is Needs to improvement")
 }
