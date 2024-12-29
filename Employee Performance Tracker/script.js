@@ -6,7 +6,7 @@ const employees = [
     ];
 
 
-
+let arr=[];
  employees.map((user)=>{
    if(user.tasksCompleted>=40 && user.rating>=4.0){
     let bonus=user.tasksCompleted*10;
@@ -18,13 +18,13 @@ output.id=user.id;
 output.tasksCompleted=user.tasksCompleted;
 output.bonus=user.bonus;
 
-console.log(output);
+arr.push(output);
+
    }
     })
 
-//     ********************************
-//       how to Two objects in one Array 
-// ********************************** 
+    console.log(arr)
+
 
 let avgRating=0;
 for ( let employe of employees ){
